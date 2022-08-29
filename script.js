@@ -11,7 +11,7 @@ function createCards(projects) {
     cards.innerHTML += /*hmtl*/
   `
   <div class="col">
-    <div class="card h-100">
+    <div class="card h-100 mb-1">
       <div class="card-body">
       <h4 class="card-title">${card.name}</h4>
         <p class="card-text">
