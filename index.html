@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Maralied</title>
+    <!--Style-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <div class="container_navbar">
+      <nav id="inicio" class="navbar center">
+        <a class="navbar_item" href="#inicio">INICIO</a>
+        <a class="navbar_item" href="#aprecentacao">APRESENTAÇÃO</a>
+        <a class="navbar_item" href="#formacao">FORMAÇÃO</a>
+        <a class="navbar_item" href="#experiencia">EXPERIÊNCIA</a>
+        <a class="navbar_item" href="#contato">CONTATO</a>
+      </nav>
+    </div>
+    <!--Header-->
+    <div class="container_header">
+      <header class="header center">
+        <figure class="header_image">
+          <img
+            class="header_image--picture"
+            src="img/foto.png"
+            alt="Maralied"
+          />
+        </figure>
+        <div id="aprecentacao" class="header_aprecentacao">
+          <h1 class="header_aprecentacao--titulo">Maralied Tafur</h1>
+          <h2 class="header_aprecentacao--subtitulo">
+            <i> Estudante Desenvolvimento Backend </i>
+          </h2>
+          <p class="header_aprecetacao--description">
+            Atualmente trabalho como técnico de suporte ao usuário bilingue N1
+            na Atos Brazil e estudo análise e desenvolvimento de sistemas na
+            faculdade UNOPAR. Também faço um curso de desenvolvimento backend
+            com a
+            <a href="https://totidiversidade.com.br/"><strong>Toti</strong></a>
+            onde estou aprendendo Git, GitHub, HTML, CSS, Javascript, Testes de
+            software, MongoBD, SQLlite, API REST e Node JS.
+          </p>
+        </div>
+      </header>
+    </div>
+
+    <!--Formação-->
+    <div class="container_formacao">
+      <section id="formacao" class="formacao center">
+        <h2 class="title">Formação</h2>
+        <ul>
+          <li class="item">
+            <small>Feb 2022 - Atualmente</small>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>UNOPAR</p>
+          </li>
+          <li class="item">
+            <small>Mai 2022 - Atualmente</small>
+            <h3>Curso desenvolvimento backend</h3>
+            <p>Toti</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!--Experiência-->
+    <div class="container_experiencia">
+      <section id="experiencia" class="experiencia center">
+        <h2 class="title light">Experiencia</h2>
+        <ul>
+          <li class="item light">
+            <small>Abr 2022 - Atualmente</small>
+            <h3>Técnico de suporte ao usuário 1N</h3>
+            <p>Atos Brazil</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!--Projetos-->
+
+    <div id="projetos" class="container_projetos">
+      <div id="projetos" class="center">
+        <h2 class="title">Projetos</h2>
+        <div id="cards" class="row">
+          
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container_footer">
+      <footer id="contato" class="contato center">
+        <h2 class="title light">Contato</h2>
+
+        <!--Forms-->
+
+        <form action="/" method="post">
+          <div class="form_item">
+            <label class="form_item--label" for="nome">NOME:</label>
+            <input
+              type="text"
+              id="nome"
+              class="form_item--input"
+              name="nome"
+              placeholder="Insira seu nome."
+              required
+            /><br />
+          </div>
+
+          <div class="form_item">
+            <label class="form_item--label" for="email">EMAIL:</label>
+            <input
+              type="email"
+              id="email"
+              class="form_item--input"
+              name="email"
+              placeholder="Insira seu email"
+              required
+            /><br />
+          </div>
+          <div class="form_item">
+            <label class="form_item--label" for="assunto">ASSUNTO:</label>
+            <input
+              type="text"
+              id="assunto"
+              class="form_item--input"
+              name="assunto"
+              placeholder="Insira o asunto"
+              required
+            />
+          </div>
+
+          <div class="form_item">
+            <label class="form_item--label" for="message">MENSSAGEM: </label>
+            <textarea
+              class="form_item--input"
+              name="menssagem"
+              id="menssagem"
+              cols="25"
+              placeholder="Escreva sua mensagem aqui"
+              required
+            ></textarea>
+            <input class="form_item--btn" type="submit" value="ENVIAR" />
+          </div>
+        </form>
+
+        <!--Social Media-->
+        <div class="social-media">
+          <a
+            class="social_link"
+            href="https://www.linkedin.com/in/maralied/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+          <a
+            class="social_link"
+            href="https://github.com/maraliedtafur"
+            target="_blank"
+            ><i class="fa-brands fa-square-github"></i> GitHub</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Scripts-->
+    <script src="script.js"></script>
+  </body>
+</html>
